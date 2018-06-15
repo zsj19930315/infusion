@@ -6,4 +6,6 @@ import cn.org.fjiot.infusion.entity.User;
 
 public interface UserDao extends JpaRepository<User, Long> {
 
+	User findOneByUsername(String username);
+
 }
