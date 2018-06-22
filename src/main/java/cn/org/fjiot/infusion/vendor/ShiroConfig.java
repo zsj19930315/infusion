@@ -20,6 +20,8 @@ public class ShiroConfig {
 		ShiroFilterFactoryBean sffb = new ShiroFilterFactoryBean();
 		sffb.setSecurityManager(securityManager);
 		Map<String, String> fcdm = new LinkedHashMap<>();
+		fcdm.put("/user/u", "anon");
+		fcdm.put("/user/upload", "anon");
 		fcdm.put("/static/**", "anon");
 		fcdm.put("/user/regist", "anon");
 		fcdm.put("/app/user/regist", "anon");

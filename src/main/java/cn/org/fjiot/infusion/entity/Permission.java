@@ -36,7 +36,7 @@ public class Permission implements Serializable {
 	
 	private Long parentId;
 	
-	private Long parentIds;
+	private String parentIds;
 	
 	private Boolean avaliable;
 
@@ -88,11 +88,11 @@ public class Permission implements Serializable {
 		this.parentId = parentId;
 	}
 
-	public Long getParentIds() {
+	public String getParentIds() {
 		return parentIds;
 	}
 
-	public void setParentIds(Long parentIds) {
+	public void setParentIds(String parentIds) {
 		this.parentIds = parentIds;
 	}
 
